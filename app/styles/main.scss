@@ -1,0 +1,47 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+$boxGreen: #93B129;
+$boxRed: #99011E;
+$boxGrey: #777963;
+$boxBlue: #2EDEC9;
+body{
+  background:black;
+  font-family: 'PT Mono';
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+}
+
+
+@import "glitch.scss";
+
+.torrentBox{
+  background-color: $boxGrey;
+  padding:2px 5px;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 20px;
+}
+.torrentProgress{
+  background-color: $boxGreen;
+  position: absolute;
+  width: 80%;
+  top: 0;
+  left: 0;
+  height: 22px;
+}
+.torrentName{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  overflow: hidden;
+}
+.removeTorrent{
+  color: $boxRed;
+}
+.removeTorrent:hover{
+  color: $boxRed;
+}
